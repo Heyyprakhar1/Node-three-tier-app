@@ -1,0 +1,24 @@
+#STAGE-1 ( Image source )
+
+FROM node:18-alpine
+
+#STAGE-2 ( Working directory )
+
+WORKDIR /app
+
+#STAGE-3 ( Copying files )
+
+COPY . . /app/
+
+#STAGE-4 ( Installing dependencies )
+
+RUN npm install
+
+#STAGE-5 ( Exposing port )
+
+EXPOSE 5000
+
+#STAGE-6 ( Running the app )
+
+CMD ["npm", "run", "start"]
+
