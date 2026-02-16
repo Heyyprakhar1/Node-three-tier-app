@@ -24,4 +24,4 @@ EXPOSE 3000
 
 #STAGE-7 ( Running the app )
 
-CMD ["npm", "run", "start"]
+CMD ["npm","start"]

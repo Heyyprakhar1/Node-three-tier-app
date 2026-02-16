@@ -8,7 +8,7 @@ WORKDIR /app
 
 #STAGE-3 ( Copying files )
 
-COPY . . /app/
+COPY . i.
 
 #STAGE-4 ( Installing dependencies )
 
@@ -20,5 +20,6 @@ EXPOSE 5000
 
 #STAGE-6 ( Running the app )
 
-CMD ["npm", "run", "start"]
+CMD ["node", "server.js"]
+
 
